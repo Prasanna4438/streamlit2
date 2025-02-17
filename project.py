@@ -17,7 +17,7 @@ def review_code(user_code):
     """Send user code to the AI model for review and return the response."""
     try:
         response = model.generate_content([sys_prompt, user_code])  # Pass sys_prompt in request
-        return response.text if response.text else "No response received from AI."
+        return response.candidates[0].text if response.candidates else "No response received from AI."
     except Exception as e:
         return f"Error: {str(e)}"
 
