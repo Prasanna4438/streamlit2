@@ -31,6 +31,6 @@ if st.button("Review Code"):
     if user_code.strip():
         feedback = review_code(user_code)
         st.subheader("Review Feedback:")
-        st.markdown(feedback)
+        st.write(feedback)
     else:
         st.warning("Please enter some Python code before submitting.")
