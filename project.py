@@ -14,11 +14,11 @@ gemini = genai.GenerativeModel(
 st.title("🚀 Python Code Reviewer with Gemini AI")
 st.write("Enter your Python code snippet below, and the AI will review it.")
 # Text input for user
-user_prompt = st.text_area("📌 Enter your Python code:", height=250)
+user_prompt = st.text_area("🧑‍💻🧑‍💻 Enter your Python code:", height=150)
 # Button to process the code
-if st.button("🔍 Review Code"):
+if st.button("🔍🚶‍➡️ Review Code"):
     if user_prompt.strip():
-        with st.spinner("Reviewing your code... ⏳"):
+        with st.spinner("Reviewing your code... "):
             response = gemini.generate_content(user_prompt, stream=True)
         # Display AI Review
         st.subheader("✅ AI Review:")
