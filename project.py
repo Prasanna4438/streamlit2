@@ -12,7 +12,7 @@ gemini = genai.GenerativeModel(
 )
 # Streamlit UI
 st.title("🚀 Python Code Reviewer with Gemini AI")
-st.write("Enter your Python code snippet below, and the AI will review it.")
+st.write("Enter your Python code  below, and the AI will review it.")
 # Text input for user
 user_prompt = st.text_area("🧑‍💻🧑‍💻 Enter your Python code:", height=150)
 # Button to process the code
